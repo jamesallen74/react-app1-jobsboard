@@ -1,5 +1,5 @@
 From this video https://www.youtube.com/watch?v=LDB4uaJ87e0?t=2h21m52s
-Status: done
+Tutorial Status: done
 
 **To get it started**
 1. clone repo to loca dev env
@@ -35,3 +35,13 @@ put these lines in index.css
     @tailwind base;
     @tailwind components;
     @tailwind utilities;
+
+
+**Things to consider adding**
+- Validation on forms client-side and server-side
+- Build actual API with backend validation logic
+- Make URL to API configurable
+- Protect add/edit/delete to logged in users and validate user can only delete/edit their own posts
+- Option for admin to log in and have full control
+- Option for job submitter to log in to allow only them (plus admins) to edit or delete their post
+- Search + results page
