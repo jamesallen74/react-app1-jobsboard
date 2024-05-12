@@ -1,6 +1,5 @@
-LAST SPOT
-https://www.youtube.com/watch?v=LDB4uaJ87e0?t=2h21m52s
-2:41:44  Delete
+From this video https://www.youtube.com/watch?v=LDB4uaJ87e0?t=2h21m52s
+Status: done
 
 **To get it started**
 1. clone repo to loca dev env
