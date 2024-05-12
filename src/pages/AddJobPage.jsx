@@ -1,8 +1,8 @@
 import {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
+import {toast} from 'react-toastify';
 
 const AddJobPage = ({ addJobSubmit }) => {
-
     const [title, setTitle] = useState('');
     const [type, setType] = useState('Full-Time');
     const [location, setLocation] = useState('');
@@ -12,45 +12,32 @@ const AddJobPage = ({ addJobSubmit }) => {
     const [companyDescription, setCompanyDescription] = useState('');
     const [contactEmail, setContactEmail] = useState('');
     const [contactPhone, setContactPhone] = useState('');
-
+  
     const navigate = useNavigate();
-
+  
     const submitForm = (e) => {
-        e.preventDefault();
-
-            // here is the JSON
-            // "id": "2",
-            // "title": "Front-End Engineer (React & Redux)",
-            // "type": "Full-Time",
-            // "location": "Miami, FL",
-            // "description": "Join our team as a Front-End Developer in sunny Miami, FL. We are looking for a motivated individual with a passion for crafting beautiful and responsive web applications. Experience with UI/UX design principles and a strong attention to detail are highly desirable.",
-            // "salary": "$70K - $80K",
-            // "company": {
-            //   "name": "Veneer Solutions",
-            //   "description": "Veneer Solutions is a creative agency specializing in digital design and development. Our team is dedicated to pushing the boundaries of creativity and innovation to deliver exceptional results for our clients.",
-            //   "contactEmail": "contact@loremipsum.com",
-            //   "contactPhone": "555-555-5555"
-            //  }
-
-        const newJob = {
-            title,
-            type,
-            location,
-            description,
-            salary,
-            company: {
-                name: companyName,
-                description: companyDescription,
-                contactEmail,
-                contactPhone
-            }
-        }
-
-        //console.log(newJob);.
-        addJobSubmit(newJob);
-
-        return navigate('/jobs');
-    } 
+      e.preventDefault();
+  
+      const newJob = {
+        title,
+        type,
+        location,
+        description,
+        salary,
+        company: {
+          name: companyName,
+          description: companyDescription,
+          contactEmail,
+          contactPhone,
+        },
+      };
+  
+      addJobSubmit(newJob);
+  
+      toast.success('Job Added Successfully');
+  
+      return navigate('/jobs');
+    };
 
     return (
     <>
