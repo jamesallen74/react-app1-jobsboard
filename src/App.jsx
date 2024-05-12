@@ -4,10 +4,12 @@ import {
 	createRoutesFromElements, 
 	RouterProvider, } 
 from "react-router-dom";
+
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
 import JobsPage from './pages/JobsPage';
 import AddJob from './pages/AddJob';
+import JobPage from './pages/JobPage';
 import NotFound404 from './pages/NotFound404';
 
 const router = createBrowserRouter(
@@ -15,6 +17,7 @@ const router = createBrowserRouter(
   <Route path='/' element={<MainLayout />}>
     <Route index element={<HomePage/>} />
     <Route path='/jobs' element={<JobsPage/>} />
+    <Route path='/jobs/:id' element={<JobPage/>} />
     <Route path='/add-job' element={<AddJob/>} />
     <Route path='*' element={<NotFound404/>} />
   </Route>
