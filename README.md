@@ -1,30 +1,28 @@
 From this video https://www.youtube.com/watch?v=LDB4uaJ87e0?t=2h21m52s
 Tutorial Status: done
 
-**To get it started**
-1. clone repo to loca dev env
+**To get started new**
+1. make sure node is installed, since you need to run npm commands
+1. clone repo to local folder where you want the project
 1. open new terminal window
-1. run 'npm install'
-1. run 'npm run apiserver' to start the api on port 8000 using json-server
+1. run 'npm install' to restore node-modules
+1. run 'npm run apiserver' to start the mock api on port 8000 using json-server
 1. open new terminal window
 1. run 'npm run dev' to start the app on port 3000 using vite dev tools
 1. open the localhost link show in the terminal output
 
-**To mimich prod**
-1. stop any dev server running
-1. delete the 'dist' folder if you have one
+**To mimick prod**
+1. stop any dev server running from above
+1. if you have a 'dist' folder, delete it 
 1. run 'npm run build'
 1. notice the new 'dist' folder that appears
 1. open new terminal window
 1. run 'npm run apiserver' to start the api on port 8000 using json-server
 1. open new terminal window
-1. run 'npm run preview'
+1. run 'npm run prodpreview'
 1. open the localhost link show in the terminal output
 
-**Pre-requisite**
-Node (with NPM) installed
-
-**Commands ran for project setup, already ran**
+**Commands already ran for project setup - no need to repeat**
 
     npm create vite@latest jobsboard
 
@@ -57,3 +55,4 @@ put these lines in index.css
 - Option for admin to log in and have full control
 - Option for job submitter to log in to allow only them (plus admins) to edit or delete their post
 - Search + results page
+- cancel button on add & edit pages
