@@ -49,9 +49,9 @@ const App = () => {
       <Route path='/' element={< MainLayout />}>
           <Route index element={< HomePage />} />
           <Route path='/jobs' element={< JobsPage />} />
-          <Route path='/jobs/:id' element={< JobPage deleteJob={ deleteJob } />} loader={ jobLoader } />
-          <Route path='/jobs/add' element={< AddJobPage addJobSubmit={ addJob }/>} />
-          <Route path='/jobs/edit/:id' element={< EditJobPage updateJobSubmit={ updateJob } />} loader={ jobLoader } />
+          <Route path='/job/:id' element={< JobPage deleteJob={ deleteJob } />} loader={ jobLoader } />
+          <Route path='/job/add' element={< AddJobPage addJobSubmit={ addJob }/>} />
+          <Route path='/job/edit/:id' element={< EditJobPage updateJobSubmit={ updateJob } />} loader={ jobLoader } />
           <Route path='*' element={< NotFound404Page />} />
       </Route>
   ));
