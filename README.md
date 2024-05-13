@@ -5,9 +5,21 @@ Tutorial Status: done
 1. clone repo to loca dev env
 1. open new terminal window
 1. run 'npm install'
-1. run 'npm run server' to start the api on port 8000 using json-server
+1. run 'npm run apiserver' to start the api on port 8000 using json-server
 1. open new terminal window
 1. run 'npm run dev' to start the app on port 3000 using vite dev tools
+1. open the localhost link show in the terminal output
+
+**To mimich prod**
+1. stop any dev server running
+1. delete the 'dist' folder if you have one
+1. run 'npm run build'
+1. notice the new 'dist' folder that appears
+1. open new terminal window
+1. run 'npm run apiserver' to start the api on port 8000 using json-server
+1. open new terminal window
+1. run 'npm run preview'
+1. open the localhost link show in the terminal output
 
 **Pre-requisite**
 Node (with NPM) installed
