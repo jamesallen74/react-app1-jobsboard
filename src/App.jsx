@@ -1,6 +1,6 @@
 import { 
 	Route, 
-	createBrowserRouter, 
+	createHashRouter, 
 	createRoutesFromElements, 
 	RouterProvider, } 
 from "react-router-dom";
@@ -44,7 +44,7 @@ const App = () => {
     return;
   }
   
-  const router = createBrowserRouter(
+  const router = createHashRouter(
     createRoutesFromElements(
       <Route path='/' element={< MainLayout />}>
           <Route index element={< HomePage />} />
