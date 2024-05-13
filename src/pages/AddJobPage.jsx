@@ -224,4 +224,4 @@ const AddJobPage = ({ addJobSubmit }) => {
     )
 }
 
-export default AddJobPage
+export default AddJobPage;

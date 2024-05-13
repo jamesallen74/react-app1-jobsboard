@@ -20,4 +20,4 @@ const Hero = ({title = "Become a React Dev", subtitle = "Find the right job for 
   )
 }
 
-export default Hero
+export default Hero;

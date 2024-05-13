@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {FaMapMarker} from 'react-icons/fa'
+import {FaMapMarker} from 'react-icons/fa';
 
 const JobListing = ({ job }) => {
   
@@ -50,4 +50,4 @@ const JobListing = ({ job }) => {
     )
 }
 
-export default JobListing
+export default JobListing;

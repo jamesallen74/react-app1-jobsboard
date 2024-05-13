@@ -11,7 +11,7 @@ import JobsPage from './pages/JobsPage';
 import AddJobPage from './pages/AddJobPage';
 import JobPage, { jobLoader } from './pages/JobPage';
 import EditJobPage from "./pages/EditJobPage";
-import NotFound404 from './pages/NotFound404';
+import NotFound404Page from './pages/NotFound404Page';
 
 const App = () => {
 
@@ -46,17 +46,17 @@ const App = () => {
   
   const router = createBrowserRouter(
     createRoutesFromElements(
-    <Route path='/' element={<MainLayout />}>
-        <Route index element={<HomePage/>} />
-        <Route path='/jobs' element={<JobsPage/>} />
-        <Route path='/jobs/:id' element={<JobPage deleteJob={ deleteJob}/>} loader={jobLoader} />
-        <Route path='/jobs/add' element={<AddJobPage addJobSubmit={addJob}/>} />
-        <Route path='/jobs/edit/:id' element={<EditJobPage updateJobSubmit={updateJob}/>} loader={jobLoader} />
-        <Route path='*' element={<NotFound404/>} />
-    </Route>
+      <Route path='/' element={< MainLayout />}>
+          <Route index element={< HomePage />} />
+          <Route path='/jobs' element={< JobsPage />} />
+          <Route path='/jobs/:id' element={< JobPage deleteJob={ deleteJob } />} loader={ jobLoader } />
+          <Route path='/jobs/add' element={< AddJobPage addJobSubmit={ addJob }/>} />
+          <Route path='/jobs/edit/:id' element={< EditJobPage updateJobSubmit={ updateJob } />} loader={ jobLoader } />
+          <Route path='*' element={< NotFound404Page />} />
+      </Route>
   ));
 
   return <RouterProvider router={router} />;
 };
 
-export default App
+export default App;

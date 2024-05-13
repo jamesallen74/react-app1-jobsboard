@@ -229,4 +229,4 @@ const EditJobPage = ({updateJobSubmit}) => {
   )
 }
 
-export default EditJobPage
+export default EditJobPage;

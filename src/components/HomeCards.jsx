@@ -1,4 +1,4 @@
-import Card from './Card'
+import Card from './Card';
 import {Link} from 'react-router-dom';
 
 const HomeCards = () => {
@@ -38,4 +38,4 @@ const HomeCards = () => {
   )
 }
 
-export default HomeCards
+export default HomeCards;
